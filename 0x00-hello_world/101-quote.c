@@ -1,6 +1,6 @@
 /* Description: Pro without printf or puts to the std out. */
 #include<stdio.h>
-#include<stdlib.h>
+#include<unistd.h>
 
 /**
 * main - is set 0
@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	system("and that piece of art is use\" - Dora Kopar, 2015-10-19 \n");
+	write(1, "and that piece of art is use\" - Dora Kopar, 2015-10-19 \n", 59);
 	return (1);
 }
