@@ -11,19 +11,16 @@
 
 int main(void)
 {
-	char MyG;
+	int MyG;
 
 	srand(time(0));
 	MyG = rand() - RAND_MAX / 2;
-	MyG = 'a',
-	MyG++;
+	for
+		(MyG = 'a'; MyG <= 'z';)
 		{
 			putchar(MyG);
-
-			while
-				(MyG <= 'z');
-			putchar('\n');
+			MyG++;
 		}
-
+	putchar('\n');
 	return (0);
 }
