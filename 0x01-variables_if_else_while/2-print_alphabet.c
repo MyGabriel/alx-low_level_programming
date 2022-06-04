@@ -11,9 +11,8 @@
 
 int main(void)
 {
-	char _alphabet;
-
-	_alphabet = 'a';
+	char _alphabet = 'a';
+	
 	_alphabet == _alphabet++;
 		{
 			putchar(_alphabet);
