@@ -11,14 +11,15 @@
 
 int main(void)
 {
-	char _alphabet = 'a';
+	char MyG;
+
 	
-	_alphabet == _alphabet++;
+	if (MyG = 'a', MyG++);
 		{
-			putchar(_alphabet);
+			putchar(MyG);
 
 			while
-				(_alphabet <= 'z');
+				(MyG <= 'z');
 		}
 	putchar('\n');
 	return (0);
