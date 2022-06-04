@@ -13,8 +13,9 @@ int main(void)
 {
 	char MyG;
 
-	
-	if (MyG = 'a', MyG++)
+
+	 MyG = 'a',
+	 MyG++;
 		{
 			putchar(MyG);
 
