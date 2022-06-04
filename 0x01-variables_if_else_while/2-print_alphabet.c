@@ -13,9 +13,10 @@ int main(void)
 {
 	char MyG;
 
-
-	 MyG = 'a',
-	 MyG++;
+	srand(time(0));
+	MyG = rand() - RAND_MAX / 2;
+	MyG = 'a',
+	MyG++;
 		{
 			putchar(MyG);
 
