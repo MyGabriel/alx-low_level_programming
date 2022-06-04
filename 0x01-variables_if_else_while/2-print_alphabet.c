@@ -14,13 +14,14 @@ int main(void)
 	char MyG;
 
 	
-	if (MyG = 'a', MyG++);
+	if (MyG = 'a', MyG++)
 		{
 			putchar(MyG);
 
 			while
 				(MyG <= 'z');
+			putchar('\n');
 		}
-	putchar('\n');
+
 	return (0);
 }
