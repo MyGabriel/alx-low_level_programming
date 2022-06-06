@@ -16,8 +16,9 @@ int main(void)
 	while
 		(MyG < 10)
 	{
-		printf("%d\n", MyG);
+		printf("%d", MyG);
 		MyG++;
 	}
+	printf("\n");
 	return (0);
 }
