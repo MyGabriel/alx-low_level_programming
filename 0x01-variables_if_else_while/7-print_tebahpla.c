@@ -1,4 +1,4 @@
-/* Description: Printing alphabets A-Z */
+/* Description: Printing alphabets a-z in reverse */
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,10 +11,10 @@
 
 int main(void)
 {
-	int MyG = '9';
+	int MyG = 'z';
 
 	while
-		(MyG >= '0')
+		(MyG >= 'a')
 	{
 		putchar(MyG);
 		MyG--;
