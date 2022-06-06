@@ -11,10 +11,10 @@
 
 int main(void)
 {
-	int MyG = 1;
+	int MyG = 0;
 
 	while
-		(MyG < 10)
+		(MyG <= 9)
 	{
 		printf("%d", MyG);
 		MyG++;
