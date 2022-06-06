@@ -13,10 +13,10 @@ int main(void)
 {
 	int MyG = 'a';
 
-	while (MyG <= 'z')
+	while
+		(MyG <= 'z')
 	{
-	if (MyG != 'e' && MyG != 'q')
-
+		if (MyG != 'e' && MyG != 'q')
 		putchar(MyG);
 		MyG++;
 	}
