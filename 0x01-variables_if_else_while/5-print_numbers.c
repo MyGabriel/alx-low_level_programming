@@ -13,7 +13,8 @@ int main(void)
 {
 	int MyG = 1;
 
-	while (MyG <= 9)
+	while
+		(MyG < 10)
 	{
 		printf("%d\n", MyG);
 		MyG++;
