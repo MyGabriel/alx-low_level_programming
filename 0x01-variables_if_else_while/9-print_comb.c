@@ -18,7 +18,7 @@ int main(void)
 	{
 		putchar(MyG);
 		MyG++;
-	if (MyG == '9')
+		if (MyG == '9')
 		continue;
 		putchar(',');
 		putchar(' ');
