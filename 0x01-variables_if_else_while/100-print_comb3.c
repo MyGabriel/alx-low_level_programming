@@ -13,18 +13,19 @@ int main(void)
 {
 	int My;
 
-	My = '0';
+	My = 0;
 	while
-		(My <= '9')
+		(My <= 89)
 	{
-		putchar(My);
-		if (My < '9')
-			{
+		if (My < 90)
+		{
+			putchar((My / 10) + '0');
+			putchar((My % 10) + '0');
 			putchar(',');
 			putchar(' ');
-			}
+		}
 		My++;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
