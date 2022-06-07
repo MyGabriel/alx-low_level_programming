@@ -6,22 +6,24 @@
 /**
 * main - set to void
 * Return: 0
-* Using only putchar but not more than 2
+* Using only putchar but not more than 4
 */
 
 int main(void)
 {
-	int MyG = '0';
+	int MyG;
 
+	MyG = '0';
 	while
 		(MyG <= '9')
 	{
 		putchar(MyG);
+		if (MyG < '9')
+			{
+			putchar(',');
+			putchar(' ');
+			}
 		MyG++;
-		if (MyG == '9')
-		continue;
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
