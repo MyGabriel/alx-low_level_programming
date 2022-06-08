@@ -12,7 +12,7 @@ int main(void)
 	char f[] = "_putchar";
 
 	while
-		(e <= 8)
+		(e <= 7)
 	{
 		_putchar(f[e]);
 		e++;
