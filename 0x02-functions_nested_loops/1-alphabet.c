@@ -7,7 +7,7 @@
 * Printing lower case abc
 */
 
-int main(void)
+void print_alphabet(void)
 {
 	int My = 'a';
 
