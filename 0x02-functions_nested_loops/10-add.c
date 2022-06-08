@@ -3,6 +3,8 @@
 
 /**
  * add - add two numbers from input
+ * @s: first parameter
+ * @t: second parameter
  * Return: Always (0).
  */
 

@@ -4,7 +4,7 @@
 
 /**
  * print_to_98 - Check Holberton
- * 
+ * @n: integer
  * Return: Nothing
  */
 void print_to_98(int n)
