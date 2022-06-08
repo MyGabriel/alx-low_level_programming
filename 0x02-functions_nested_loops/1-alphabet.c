@@ -18,5 +18,4 @@ void print_alphabet(void)
 		My++;
 	}
 	_putchar('\n');
-	return (0);
 }
