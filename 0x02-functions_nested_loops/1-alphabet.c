@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	int e = 'a';
+	int My = 'a';
 
 	while
-		(e <= z)
+		(My <= 'z')
 	{
-		_putchar(e);
-		e++;
+		_putchar(My);
+		My++;
 	}
 	_putchar('\n');
 	return (0);
