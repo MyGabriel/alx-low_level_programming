@@ -9,19 +9,22 @@
 
 void print_alphabet_x10(void)
 {
-	int My = 'a';
-	int My1 = 0;
+	int My;
+	int My1;
+
+	My1 = 0;
 
 	while
-		(My1 < 10)
+		(My1 <= 9)
 	{
+		My = 'a';
 		while
 			(My <= 'z')
 		{
 			_putchar(My);
 			My++;
 		}
-		_putchar(10);
 		My1++;
+		_putchar(10);
 	}
 }
