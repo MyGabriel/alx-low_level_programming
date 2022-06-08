@@ -1,4 +1,4 @@
-/* File: A pro that generate fibo seq by adding previous two */
+/* File: A pro of fib seq by adding the previous two */
 #include <stdio.h>
 /**
  * main - main block
