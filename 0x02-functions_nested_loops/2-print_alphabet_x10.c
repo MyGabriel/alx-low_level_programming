@@ -19,9 +19,9 @@ void print_alphabet_x10(void)
 			(My <= 'z')
 		{
 			_putchar(My);
+			_putchar('\n');
 			My++;
 		}
 		My1++;
-		_putchar('\n');
 	}
 }
