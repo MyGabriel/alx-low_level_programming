@@ -1,3 +1,4 @@
+/* Bug: Debugging the code */
 #include <stdio.h>
 
 /**
@@ -7,19 +8,21 @@
 
 int main(void)
 {
-        int i;
+	int i;
 
-        printf("Infinite loop incoming :(\n");
+	printf("Infinite loop incoming :(\n");
 
-        i = 0;
+	i = 0;
 
-        while (i < 10)
-        {
-                putchar(i);
-		/* i++ */
-        }
+	/**
+	*while (i < 10)
+	*{
+	*	putchar(i);
+	*
+	*}
+	*/
 
-        printf("Infinite loop avoided! \\o/\n");
+	printf("Infinite loop avoided! \\o/\n");
 
-        return (0);
+	return (0);
 }
