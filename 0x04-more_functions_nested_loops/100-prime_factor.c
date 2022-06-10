@@ -22,7 +22,7 @@ int main(void)
 		}
 	}
 
-	printf("%ld\n", maxf);
+	printf("%ld\n", bigx);
 
 	return (0);
 }
