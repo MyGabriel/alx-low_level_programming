@@ -1,31 +1,40 @@
-/* Description: Printing alphabets 123 */
-#include <time.h>
+/* Description: Printing double num combination */
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
-* main - set to void
-* Return: 0
-* Using only putchar but not more than 4
-*/
+ * main - print double digit combos
+ * Description: print double digit combos
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-	int My;
+	int a, b;
 
-	My = 0;
-	while
-		(My <= 89)
+	a = 48;
+	b = 48;
+
+	while (a < 58)
 	{
-		if (My < 90)
+		b = a + 1;
+		while (b < 58)
 		{
-			putchar((My / 10) + '0');
-			putchar((My % 10) + '0');
-			putchar(',');
-			putchar(' ');
+			putchar(a);
+			putchar(b);
+
+			if (a < 56 || b < 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
+			b++;
 		}
-		My++;
+
+		a++;
 	}
+
 	putchar(10);
+
 	return (0);
 }
