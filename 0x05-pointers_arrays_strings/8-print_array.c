@@ -3,20 +3,22 @@
 #include <stdio.h>
 
 /**
- * main - void
- * print_array - a func for the array
- * @a: the pointer to the elements
- * @n: times to print elements
+ * print_array - print an array.
+ * @a: the array to print.
+ * @n: array's length
  */
-void print_array(int *, int);
 
-int main(void)
+void print_array(int *a, int n)
 {
-	int b[1] = {
-		98
-	};
+	int i;
 
-	print_array(b, 0);
-	print_array(b, -1);
-	return (0);
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", a[i]);
+		if (i < n - 1)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
 }
