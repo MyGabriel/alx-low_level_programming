@@ -3,33 +3,34 @@
 #include <stdio.h>
 
 /**
- * _strstr - locates a substring
- * @haystack: string
- * @needle: string
- *
- * Return: a pointer to the beginning of a substring
+ * _strstr - find str in str
+ * @haystack: pointer param
+ * @needle: pointer param
+ * Return: pointer
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	int a;
-	int b;
+	char *a = haystack, *b = needle;
 
-	for (a = 0; haystack[a] != '\0';)
+	while
+		(*haystack)
 	{
-		for (b = 0; needle[b] != '\0'; b++)
+		while
+			(*needle)
 		{
-			if (needle[b] != haystack[a + b])
+			if (*haystack++ != *needle++)
 			{
 				break;
 			}
 		}
-	if (needle[b] == '\0')
-	{
-		return (&haystack[a]);
+		if (!*needle)
+		{
+			return (a);
+		}
+		needle = b;
+		a++;
+		haystack = b;
 	}
-	i
-	a++;
-	}
-	return ('\0');
+	return (0);
 }
