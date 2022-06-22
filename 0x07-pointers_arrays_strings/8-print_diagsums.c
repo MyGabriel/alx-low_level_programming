@@ -1,4 +1,4 @@
-/* File7: A func that prints the sum of two diagonal of a square metre of int */
+/* File7: A func to print the sum of two diagonals of a square metre of int */
 #include "main.h"
 #include <stdio.h>
 
