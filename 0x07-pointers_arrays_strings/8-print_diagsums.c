@@ -3,20 +3,29 @@
 #include <stdio.h>
 
 /**
- * print_diagsums -  prints sums
- * @a: pointer parametre
- * @size: parametre
- */
+ * print_diagsums - print sum of diagonal values in a square array
+ * @a: array of values
+ * @size: size of array
+ * Description: prints sum of both diagonals
+ * Return: nothing
+ **/
 
 void print_diagsums(int *a, int size)
 {
-	int x, sum_1 = 0, sum_2 = 0;
+	int sum_1, sum_2, y;
 
-	for (x = 0; x < size; x++)
+	sum_1 = 0;
+	sum_2 = 0;
+
+	for (y = 0; y < size; y++)
 	{
-		sum_1 += *(a + (size * ix+ x));
-		sum_2 += *(a + (size * x + size - 1 - x));
+		sum_1 += a[y * size + y];
 	}
-	printf("%d, ", sum_1);
-	printf("%d\n", sum_2);
+
+	for (y = size - 1; y >= 0; y--)
+	{
+		sum_2 += a[y * size + (size - y - 1)];
+	}
+
+	printf("%d, %d\n", sum_1, sum_2);
 }
