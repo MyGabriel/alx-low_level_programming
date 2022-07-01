@@ -1,22 +1,21 @@
 /* File0: A func that allocates a mem via malloc */
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * malloc_checked - Allocates memory using malloc.
- * @b: The number of bytes to be allocated.
+ * malloc_checked - allocates memory using malloc
+ * @b: the memory to allocate
  *
- * Return: A pointer to the allocated memory.
+ * Return: a pointer to the allocated memory
  */
-
 void *malloc_checked(unsigned int b)
 {
-	void *mem
+	void *allocate;
 
-	mem = malloc(b);
+	allocate = malloc(b);
 
-	if (mem == NULL)
+	if (allocate == NULL)
+	{
 		exit(98);
-
-	return (mem);
+	}
+	return (allocate);
 }
