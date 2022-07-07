@@ -1,4 +1,3 @@
-/* File3a: A prototypes file for task 3 */
 #ifndef CALCULATOR
 #define CALCULATOR
 #include <stddef.h>
